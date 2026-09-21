@@ -633,3 +633,16 @@ button:focus-visible {
   }
 
 }
+
+.hero-copy.reveal {
+  opacity: 1 !important;
+  visibility: visible !important;
+  transform: none !important;
+}
+
+.hero-copy.reveal h1,
+.hero-copy.reveal p,
+.hero-copy.reveal .hero-actions {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
