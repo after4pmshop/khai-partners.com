@@ -114,3 +114,99 @@
   transform: translateX(-20px);
   pointer-events: none;
 }
+
+.brand {
+  position: relative;
+}
+
+.brand-preview {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: rgba(243, 242, 242, 0.88);
+
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+
+  transition:
+    opacity 0.35s ease,
+    visibility 0.35s ease;
+}
+
+.brand-preview img {
+  width: min(420px, 55vw);
+  height: auto;
+
+  opacity: 0;
+  transform: scale(0.88);
+
+  transition:
+    opacity 0.4s ease,
+    transform 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.brand:hover .brand-preview {
+  opacity: 1;
+  visibility: visible;
+}
+
+.brand:hover .brand-preview img {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* =========================
+   INTRO SCREEN
+========================= */
+
+.intro-screen {
+  position: fixed;
+  inset: 0;
+  z-index: 99999;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: rgba(245, 244, 244, 1);
+
+  cursor: pointer;
+
+  transform: translateY(0);
+  transition: transform 1.1s cubic-bezier(0.77, 0, 0.18, 1);
+}
+
+.intro-screen img {
+  width: min(520px, 65vw);
+  height: auto;
+
+  opacity: 1;
+  transform: scale(0.3);
+
+  transition:
+    transform 1.1s cubic-bezier(0.77, 0, 0.18, 1),
+    opacity 0.7s ease;
+}
+
+
+/* Saat diklik */
+.intro-screen.hide {
+  transform: translateY(-100%);
+}
+
+.intro-screen.hide img {
+  transform: scale(0.92);
+  opacity: 0;
+}
+
+
+/* Jangan bisa scroll ketika intro masih terbuka */
+body.intro-active {
+  overflow: hidden;
+}
