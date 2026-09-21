@@ -24,29 +24,17 @@ if(pageHero){
   document.head.appendChild(style);
 }
 
-const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{
-  if(entry.isIntersecting){
-    entry.target.classList.add('visible');
-    observer.unobserve(entry.target);
-  }
-}),{threshold:.12});
-
-document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
-const year=document.getElementById('year');
-if(year) year.textContent=new Date().getFullYear();
-
 document.addEventListener("DOMContentLoaded", function () {
 
   const intro = document.getElementById("introScreen");
 
-  document.body.classList.add("intro-active");
+  if (!intro) return;
 
   intro.addEventListener("click", function () {
 
     intro.classList.add("hide");
 
     setTimeout(() => {
-      document.body.classList.remove("intro-active");
       intro.remove();
     }, 1100);
 
