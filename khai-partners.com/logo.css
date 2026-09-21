@@ -1,0 +1,86 @@
+.brand {
+  gap: 15px;
+}
+
+.brand-logo {
+  display: block;
+  width: 118px;
+  height: 62px;
+  object-fit: contain;
+  object-position: center;
+  padding: 0;
+  background: transparent;
+  border: 0;
+}
+
+.brand-service {
+  max-width: 120px;
+  color: #17304e;
+  font-size: 8px;
+  line-height: 1.55;
+  letter-spacing: .18em;
+}
+
+.footer-logo {
+  width: 105px;
+  height: 82px;
+}
+
+@media (max-width: 560px) {
+  .brand-logo {
+    width: 94px;
+    height: 50px;
+    padding: 0;
+  }
+
+  .brand-service {
+    display: none;
+  }
+}
+
+.nav {
+  background: #fff;
+  color: #071628;
+  border-bottom: 1px solid rgba(7, 22, 40, .14);
+  box-shadow: 0 8px 30px rgba(7, 22, 40, .06);
+}
+
+.nav nav a {
+  color: #172131;
+}
+
+.nav nav a:hover,
+.nav .active {
+  color: #9b7738;
+}
+
+.nav-cta {
+  border-color: #b99a5b !important;
+}
+
+.menu span {
+  background: #071628;
+}
+
+@media (max-width: 900px) {
+  .nav nav {
+    background: #fff;
+    border-top: 1px solid rgba(7, 22, 40, .1);
+  }
+}
+
+.portrait-photo {
+  background: #071628;
+}
+
+.portrait-photo::before {
+  display: none;
+}
+
+.portrait-photo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 28%;
+}
