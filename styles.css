@@ -201,7 +201,7 @@
 }
 
 .intro-screen.hide img {
-  transform: scale(0.92);
+  transform: scale(0.5);
   opacity: 0;
 }
 
