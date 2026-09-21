@@ -28,16 +28,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const intro = document.getElementById("introScreen");
 
-  if (!intro) return;
+  if (intro) {
+    intro.addEventListener("click", function () {
+      intro.classList.add("hide");
 
-  intro.addEventListener("click", function () {
-
-    intro.classList.add("hide");
-
-    setTimeout(() => {
-      intro.remove();
-    }, 1100);
-
-  });
+      setTimeout(function () {
+        intro.remove();
+      }, 1100);
+    });
+  }
 
 });
