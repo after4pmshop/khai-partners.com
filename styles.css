@@ -204,9 +204,3 @@
   transform: scale(0.5);
   opacity: 0;
 }
-
-
-/* Jangan bisa scroll ketika intro masih terbuka */
-body.intro-active {
-  overflow: hidden;
-}
