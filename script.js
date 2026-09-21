@@ -34,3 +34,22 @@ const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{
 document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
 const year=document.getElementById('year');
 if(year) year.textContent=new Date().getFullYear();
+
+document.addEventListener("DOMContentLoaded", function () {
+
+  const intro = document.getElementById("introScreen");
+
+  document.body.classList.add("intro-active");
+
+  intro.addEventListener("click", function () {
+
+    intro.classList.add("hide");
+
+    setTimeout(() => {
+      document.body.classList.remove("intro-active");
+      intro.remove();
+    }, 1100);
+
+  });
+
+});
