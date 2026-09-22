@@ -1,5 +1,0 @@
-# HTTrack Website Copier Cookie File
-# This file format is compatible with Netscape cookies
-khai-partners.com	TRUE	/	FALSE	1999999999	__cf_bm	zaf7uejvazALc2tG2v5O2cMWRZCR7nB44OTiDMBWTeI-1789953805.0139804-1.0.1.1-Ui5qOurwUOCafK0gCerJNfAEOEBtyFYa6tvDd9jFsWejzO08B.2zRE6IbiKWnR52FwS.fGu6dzzKSD7rpHFe3utlIrqaqI8LNV5GysgRuYjDUJOozjb3h3qeAM8Mf.n7
-khai-partners.com	TRUE	/	FALSE	1999999999	SameSite	None
-
