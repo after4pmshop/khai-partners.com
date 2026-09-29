@@ -9,7 +9,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="initial-scale=1.0" />
 
-    
+    <title>Khai & Partners &#8211; Law Firm</title>
+    <link rel="icon" type="image/png" href="images/favicon.png">
 
     <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
     <link rel="stylesheet" href="js/plugins/superfish/css/superfish.css" type="text/css" media="all" />
@@ -195,7 +196,7 @@
                                     <div id="attorney-4164" class="post-4164 attorney type-attorney status-publish has-post-thumbnail hentry attorney_category-attorney">
                                         <div class="gdlr-attorney-info-wrapper">
                                             <div class="gdlr-attorney-thumbnail">
-                                                <a href="upload/attorney-3.jpg" data-rel="fancybox"><img src="upload/attorney-3-400x300.png" alt="" width="700" height="380" /></a>
+                                                <a href="upload/attorney-3-400x300.png" data-rel="fancybox"><img src="upload/attorney-3-400x300.png" alt="" width="700" height="380" /></a>
                                             </div>
                                             <div class="gdlr-attorney-info-head">
                                                 <h3 class="gdlr-attorney-info-title">Everton Jeffry Hutabarat</h3>
@@ -230,7 +231,7 @@
     Everton Jeffry Hutabarat S.H., M.H.
 </h4>
 
-<p style="font-size: 20px; line-height: 1.8;">
+<p style="text-align: justify; font-size: 20px; line-height: 1.8;">
     I am Everton Jeffry Hutabarat, an Indonesian 
     advocate and legal professional based in Balikpapan, 
     East Kalimantan, with more than 13 years of experience 
@@ -241,7 +242,7 @@
     legal position, manage risk, and make informed business decisions.
 
 </p>
-<p style="font-size: 20px; line-height: 1.8;">
+<p style="text-align: justify; font-size: 20px; line-height: 1.8;">
     Throughout my career, I have advised on corporate licensing, 
     regulatory compliance, property development, and plantation 
     operations. My experience includes drafting commercial agreements, 
@@ -250,7 +251,7 @@
     palm oil mill expansion. I have also assisted clients with trademark 
     registration and intellectual property matters.
 </p>
-<p style="font-size: 20px; line-height: 1.8;">
+<p style="text-align: justify; font-size: 20px; line-height: 1.8;">
     I hold a Bachelor of Law from Universitas Kristen Indonesia and a 
     Master of Law specializing in criminal law from Universitas Sumatera Utara. 
     I am a licensed advocate and hold a tax lawyer certification. My approach 
@@ -281,7 +282,125 @@
         </div>
         <!-- content wrapper -->
 
+<!-- Navigasi halaman attorney -->
+<div class="khai-attorney-navigation">
+    <a id="khai-attorney-prev"
+    href="singleattorney-joko.html"
+       class="khai-attorney-arrow"
+       aria-label="Previous attorney">
+        <span aria-hidden="true">&#8592;</span>
+        Previous
+    </a>
 
+    <span id="khai-attorney-counter"
+          class="khai-attorney-counter"></span>
+
+    <a id="khai-attorney-next"
+    href="singleattorney-khai.html"
+       class="khai-attorney-arrow"
+       aria-label="Next attorney">
+        Next
+        <span aria-hidden="true">&#8594;</span>
+    </a>
+</div>
+
+<style>
+    .khai-attorney-navigation {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 24px;
+        margin: 35px 15px 50px;
+    }
+
+    .khai-attorney-navigation .khai-attorney-arrow {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        padding: 12px 20px;
+        border: 1px solid #b89b67;
+        border-radius: 4px;
+        background: transparent;
+        color: #8b6b43;
+        font-size: 14px;
+        text-decoration: none;
+        cursor: pointer;
+        transition: background-color 0.2s, color 0.2s;
+    }
+
+    .khai-attorney-navigation .khai-attorney-arrow:hover,
+    .khai-attorney-navigation .khai-attorney-arrow:focus-visible {
+        background: #b89b67;
+        color: #ffffff;
+    }
+
+    .khai-attorney-arrow span {
+        font-size: 24px;
+        line-height: 1;
+    }
+
+    .khai-attorney-counter {
+        color: #777777;
+        font-size: 14px;
+        white-space: nowrap;
+    }
+
+    @media (max-width: 479px) {
+        .khai-attorney-navigation {
+            gap: 12px;
+        }
+
+        .khai-attorney-navigation .khai-attorney-arrow {
+            padding: 10px 14px;
+        }
+    }
+</style>
+
+<script>
+(function () {
+    // Sesuaikan dengan nama file ketiga halaman profil.
+    const attorneyPages = [
+    "singleattorney-khai.html",
+    "singleattorney-joko.html",
+    "singleattorney-everton.html"
+];
+    ];
+
+    const filename = decodeURIComponent(
+        window.location.pathname.split("/").pop()
+    );
+
+    const navigation = document.querySelector(
+        ".khai-attorney-navigation"
+    );
+
+    if (!navigation) return;
+
+    const currentIndex = attorneyPages.indexOf(filename);
+    const totalPages = attorneyPages.length;
+
+    if (currentIndex === -1) {
+        navigation.style.display = "none";
+        return;
+    }
+
+    const previousIndex =
+        (currentIndex - 1 + totalPages) % totalPages;
+
+    const nextIndex =
+        (currentIndex + 1) % totalPages;
+
+    document.getElementById("khai-attorney-prev").href =
+        attorneyPages[previousIndex];
+
+    document.getElementById("khai-attorney-next").href =
+        attorneyPages[nextIndex];
+
+    document.getElementById("khai-attorney-counter").textContent =
+        (currentIndex + 1) + " / " + totalPages;
+})();
+</script>
 
         <footer class="footer-wrapper">
             <div class="footer-container container">
