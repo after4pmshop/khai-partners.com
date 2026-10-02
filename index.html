@@ -923,182 +923,171 @@
                         </div>
                         <div class="clear"></div>
                     </section>
-                    <section id="content-section-7">
-                        <div
-                            class="gdlr-parallax-wrapper gdlr-background-image gdlr-show-all gdlr-skin-dark-skin"
-                            id="gdlr-parallax-wrapper-2"
-                            data-bgspeed="0"
-                            style="background-image: url('upload/bg-contact-hp.jpg'); padding-top: 70px; padding-bottom: 0px;"
+                   <style>
+    #content-section-7 .khai-contact-photo,
+    #content-section-7 .khai-contact-photo .gdlr-image-frame-item,
+    #content-section-7 .khai-contact-photo .gdlr-frame,
+    #content-section-7 .khai-contact-photo .gdlr-image-link-shortcode {
+        margin: 0;
+        padding: 0;
+    }
+
+    #content-section-7 .khai-contact-photo img {
+        display: block;
+        width: 100%;
+        height: auto;
+        margin: 0;
+    }
+
+    @media (min-width: 768px) {
+        #content-section-7 .khai-contact-row {
+            display: flex;
+            align-items: stretch;
+        }
+
+        #content-section-7 .khai-contact-row > .six.columns {
+            float: none;
+            width: 50%;
+            min-width: 0;
+        }
+
+        #content-section-7 .khai-contact-photo {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+        }
+    }
+
+    @media (max-width: 767px) {
+        #content-section-7 .khai-contact-row > .six.columns {
+            float: none;
+            width: 100%;
+        }
+    }
+</style>
+
+<section id="content-section-7">
+    <div
+        class="gdlr-parallax-wrapper gdlr-background-image gdlr-show-all gdlr-skin-dark-skin"
+        id="gdlr-parallax-wrapper-2"
+        data-bgspeed="0"
+        style="background-image: url('upload/bg-contact-hp.jpg'); padding-top: 70px; padding-bottom: 0;"
+    >
+        <div class="container khai-contact-row">
+
+            <!-- LEFT COLUMN: CONTACT FORM -->
+            <div class="six columns">
+
+                <div class="gdlr-title-item" style="margin-bottom: 45px;">
+                    <div class="gdlr-item-title-wrapper gdlr-item pos-center">
+
+                        <div class="gdlr-item-title-head">
+                            <h3 class="gdlr-item-title gdlr-skin-title gdlr-skin-border">
+                                Don't hesitate to ask
+                            </h3>
+                        </div>
+
+                        <div class="gdlr-item-title-caption gdlr-skin-info">
+                            Law is a complicated matter. It can cause you a big problem
+                            <br>
+                            if you ignore it. Let us help you!
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="gdlr-item gdlr-content-item">
+                    <div
+                        role="form"
+                        class="wpcf7"
+                        id="wpcf7-f426-o1"
+                        lang="en-US"
+                        dir="ltr"
+                    >
+                        <div class="screen-reader-response">
+                            <p
+                                role="status"
+                                aria-live="polite"
+                                aria-atomic="true"
+                            ></p>
+                            <ul></ul>
+                        </div>
+
+                        <form
+                            method="post"
+                            action="contactform/contactengine.php"
                         >
-                            <div class="container">
+                            <input
+                                type="text"
+                                name="Name"
+                                id="Name"
+                                placeholder="Name:"
+                                aria-label="Name"
+                                class="input"
+                                required
+                            >
 
-    <!-- LEFT COLUMN : CONTACT FORM -->
-    <div class="six columns">
+                            <input
+                                type="text"
+                                name="City"
+                                id="City"
+                                placeholder="City:"
+                                aria-label="City"
+                                class="input"
+                                required
+                            >
 
-        <div class="gdlr-title-item" style="margin-bottom: 45px;">
-            <div class="gdlr-item-title-wrapper gdlr-item pos-center">
+                            <input
+                                type="email"
+                                name="Email"
+                                id="Email"
+                                placeholder="Email:"
+                                aria-label="Email"
+                                class="input"
+                                required
+                            >
 
-                <div class="gdlr-item-title-head">
-                    <h3 class="gdlr-item-title gdlr-skin-title gdlr-skin-border">
-                        Don't hesitate to ask
-                    </h3>
-                </div>
+                            <textarea
+                                name="Message"
+                                rows="10"
+                                cols="20"
+                                id="Message"
+                                placeholder="Message:"
+                                aria-label="Message"
+                                class="input"
+                                required
+                            ></textarea>
 
-                <div class="gdlr-item-title-caption gdlr-skin-info">
-                    Law is a complicated matter. It can cause you a big problem
-                    <br />
-                    if you ignore it. Let us help you!
+                            <input
+                                type="submit"
+                                name="submit"
+                                value="Submit"
+                                class="submit-button"
+                            >
+                        </form>
+                    </div>
                 </div>
 
             </div>
-        </div>
 
-
-        <!-- CONTACT FORM -->
-        <div class="gdlr-item gdlr-content-item">
-
-            <div role="form"
-                 class="wpcf7"
-                 id="wpcf7-f426-o1"
-                 lang="en-US"
-                 dir="ltr">
-
-                <div class="screen-reader-response">
-                    <p role="status"
-                       aria-live="polite"
-                       aria-atomic="true"></p>
-                    <ul></ul>
+            <!-- RIGHT COLUMN: IMAGE -->
+            <div class="six columns khai-contact-photo">
+                <div class="gdlr-image-frame-item gdlr-item">
+                    <div class="gdlr-frame frame-type-none">
+                        <div class="gdlr-image-link-shortcode">
+                            <img
+                                src="upload/khairul-anam2.png?v=20261002-3"
+                                alt="Contact KHAI &amp; Partners"
+                            >
+                        </div>
+                    </div>
                 </div>
-
-
-                <!-- FORM -->
-                <form method="post"
-                      action="contactform/contactengine.php">
-
-                    <!-- NAME -->
-                    <input
-                        type="text"
-                        name="Name"
-                        id="Name"
-                        placeholder="Name:"
-                        class="input"
-                        required
-                    />
-
-
-                    <!-- CITY -->
-                    <input
-                        type="text"
-                        name="City"
-                        id="City"
-                        placeholder="City:"
-                        class="input"
-                        required
-                    />
-
-
-                    <!-- EMAIL -->
-                    <input
-                        type="email"
-                        name="Email"
-                        id="Email"
-                        placeholder="Email:"
-                        class="input"
-                        required
-                    />
-
-
-                    <!-- MESSAGE -->
-                    <textarea
-                        name="Message"
-                        rows="10"
-                        cols="20"
-                        id="Message"
-                        placeholder="Message:"
-                        class="input"
-                        required
-                    ></textarea>
-
-
-                    <!-- SUBMIT -->
-                    <input
-                        type="submit"
-                        name="submit"
-                        value="Submit"
-                        class="submit-button"
-                    />
-
-                </form>
-
             </div>
 
         </div>
-
     </div>
-
-
-    <!-- RIGHT COLUMN : IMAGE -->
-    <div class="six columns" style="margin-bottom: 0;">
-
-    <div class="gdlr-image-frame-item gdlr-item"
-         style="margin: 0; padding: 0;">
-
-        <div class="gdlr-frame frame-type-none"
-             style="margin: 0; padding: 0;">
-
-            <div class="gdlr-image-link-shortcode"
-                 style="margin: 0; padding: 0;">
-
-                <img
-                    src="upload/khairul-anam2.png"
-                    alt="Contact KHAI & Partners"
-                    style="display: block; width: 100%; height: auto; margin: 0;"
-                />
-
-            </div>
-
-        </div>
-
-    </div>
-
-</div>
-
-
-    <!-- CLEAR -->
     <div class="clear"></div>
-
-</div>
-                        </div>
-                        <div class="clear"></div>
-                    </section>
-                    <section id="content-section-8">
-                        <div class="gdlr-color-wrapper gdlr-show-all no-skin" style="background-color: #ffffff; padding-top: 70px; padding-bottom: 45px;">
-                            <div class="container">
-                                <div class="gdlr-banner-item-wrapper">
-                                    <div class="gdlr-item-title-wrapper gdlr-item pos-center gdlr-nav-container">
-                                        <div class="gdlr-item-title-head">
-                                            <h3 class="gdlr-item-title gdlr-skin-title gdlr-skin-border">Some Of Our Clients</h3>
-                                            <div class="gdlr-item-title-nav">
-                                            
-                                            </div>
-                                        </div>
-                                        <div class="gdlr-item-title-divider"></div>
-                                    </div>
-                                    <div class="gdlr-banner-images gdlr-item">
-                                        <div class="flexslider" data-pausetime="7000" data-slidespeed="600" data-effect="fade" data-columns="5" data-type="carousel" data-nav-container="gdlr-banner-images">
-                                            <ul class="slides">
-                                                <li><img src="#" alt="" width="230" height="117" /></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="clear"></div>
-                                <div class="clear"></div>
-                            </div>
-                        </div>
-                        <div class="clear"></div>
-                    </section>
-                </div>
+</section>
 
                 <!-- Below Sidebar Section-->
             </div>
