@@ -373,6 +373,27 @@
             grid-template-columns: 1fr;
         }
     }
+    @media (min-width: 960px) {
+    #khai-practices .khai-cards {
+        grid-template-columns: repeat(8, minmax(0, 1fr));
+    }
+
+    #khai-practices .khai-card {
+        grid-column: span 2;
+    }
+
+    #khai-practices .khai-card:nth-last-child(3) {
+        grid-column: 2 / span 2;
+    }
+
+    #khai-practices .khai-card:nth-last-child(2) {
+        grid-column: 4 / span 2;
+    }
+
+    #khai-practices .khai-card:last-child {
+        grid-column: 6 / span 2;
+    }
+}
 </style>
 
 <div class="with-sidebar-wrapper">
@@ -421,15 +442,6 @@
                     <h3>
                         <a href="single-practice5.html">
                             Banking &amp; Finance Law
-                        </a>
-                    </h3>
-                </div>
-
-                <div class="khai-card">
-                    <img src="upload/practice6.jpg" alt="">
-                    <h3>
-                        <a href="single-practice6.html">
-                            Capital Markets &amp; Securities
                         </a>
                     </h3>
                 </div>
