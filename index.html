@@ -63,6 +63,37 @@
             font-size: 11px !important;
             white-space: nowrap;
         }
+        
+        /* Meet Our Lawyers: satu kolom di HP */
+@media (max-width: 767px) {
+    #content-section-6 .gdlr-attorney-carousel-item {
+        width: auto !important;
+        min-width: 0 !important;
+    }
+
+    #content-section-6 .gdlr-attorney-carousel-item > .attorney-item-holder {
+        display: flex !important;
+        flex-direction: column;
+        gap: 40px;
+        width: 100% !important;
+        transform: none !important;
+    }
+
+    #content-section-6 .gdlr-attorney-item {
+        float: none !important;
+        width: 100% !important;
+        min-width: 0 !important;
+        margin: 0 !important;
+        box-sizing: border-box;
+    }
+
+    #content-section-6 .gdlr-attorney-thumbnail img {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+}
     }
 </style>
 </head>
